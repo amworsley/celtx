@@ -73,18 +73,6 @@
                    label="&toolbox.label;"
                    tooltiptext="&toolbox.label;"
                    oncommand="openExtensionsManager();"/>
-    <toolbarbutton id="celtx-studio-button"
-                   type="menu-vertical"
-                   class="project-toolbar-button"
-                   label="&celtxServices.toolbarlabel;"
-                   tooltiptext="&celtxServices.tooltiptext;">
-      <menupopup>
-        <menuitem label="&openFromStudio.label;&ellipsis;"
-                  command="cmd-open-studio"/>
-        <menuitem label="&saveToStudio.label;&ellipsis;"
-                  oncommand="cmdSaveProjectToServer();"/>
-      </menupopup>
-    </toolbarbutton>
     <toolbarspacer flex="1"/>
     <iframe id="bannerframe"
             width="234"
