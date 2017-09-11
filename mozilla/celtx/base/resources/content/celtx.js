@@ -4,20 +4,20 @@
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * v. 2.0. If a copy of the MPL was not distributed with this file, You can
  * obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Software distributed under the License is distributed on an "AS IS"
  * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See
  * the License for the specific language governing rights and limitations
  * under the License.
- * 
+ *
  * The Original Code is Celtx Script Manager.
- * 
+ *
  * The Initial Developer of the Original Code is 4067479 Canada Inc.
  * t/a CELTX.
- * 
+ *
  * Portions created by Celtx are Copyright (C) 4067479 Canada Inc. All
  * Rights Reserved.
- * 
+ *
  * Contributor(s):
  *
  ***** END LICENCE BLOCK ***** */
@@ -137,7 +137,7 @@ function updateStatusbar () {
   var networkmenu = document.getElementById("networkmenu");
   var loginmenuitem = document.getElementById("loginmenuitem");
   var logoutmenuitem = document.getElementById("logoutmenuitem");
-
+    /*
   var cxsvc = getCeltxService();
   if (cxsvc.loggedIn) {
     loginmenuitem.hidden = true;
@@ -152,6 +152,10 @@ function updateStatusbar () {
     networkmenu.setAttribute("image", "chrome://celtx/skin/offline.png");
   }
   updateNotifierLabel();
+    */
+    loginmenuitem.hidden = true;
+    logoutmenuitem.hidden = true;
+    networkmenu.hidden = true;
 }
 
 
@@ -424,7 +428,7 @@ function loadCeltxURI (uri) {
 
 
 function loadXPI (uri) {
-  var wm = getWindowMediator();  
+  var wm = getWindowMediator();
   var emwin = wm.getMostRecentWindow("Extension:Manager");
   if (emwin) {
     emwin.focus();
@@ -467,7 +471,7 @@ function loadProjectPreflight () {
     inlineSpellCheck = branch.getBoolPref("inline");
   }
   catch (ex) { }
-  
+
   if (menuitem)
     menuitem.setAttribute("checked", inlineSpellCheck);
   else
@@ -790,7 +794,7 @@ function upgradeFileVersion () {
   for (var i = 0; i < docpairs.length; ++i) {
     var doctype = docpairs[i][0];
     var category = docpairs[i][2];
-    
+
     // First half: Find all documents of type |doctype| and upgrade them
     var docs = model.sources(PROP('cx:doctype'), doctype);
     for (var j = 0; j < docs.length; ++j) {
@@ -1370,7 +1374,7 @@ DocFrame.prototype = {
   menu: null,
   outlineLoaded: false,
   panelLoaded: false,
-  
+
   supportsCommand: function supportsCommand (cmd) {
     if (! this.controller) return false;
 
@@ -2034,7 +2038,7 @@ var gDocDNDObserver = {
     throw Components.results.NS_NOINTERFACE;
   },
 
-  
+
   DROP_BEFORE: Components.interfaces.nsIXULTreeBuilderObserver.DROP_BEFORE,
   DROP_ON: Components.interfaces.nsIXULTreeBuilderObserver.DROP_ON,
   DROP_AFTER: Components.interfaces.nsIXULTreeBuilderObserver.DROP_AFTER,
@@ -2709,7 +2713,7 @@ function projectWindowWillClose () {
     obsvc.removeObserver(gController, "celtx:login-status-changed");
     obsvc.removeObserver(gController, "celtx:recent-projects-changed");
     obsvc.removeObserver(gController, "celtx:notification-count-changed");
-  
+
     if (gProject) {
       // Remove preference observers
       try {
@@ -3775,7 +3779,7 @@ function needsConversion (fileURL) {
   var t = tempFile('rdf');
   t.remove(false);
   f.copyTo(t.parent, t.leafName);
-  
+
   var ds = loadDataSource(fileToFileURL(t));
   var m  = new RDFModel(ds);
 
