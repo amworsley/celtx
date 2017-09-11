@@ -339,7 +339,7 @@
 <!ENTITY celtxAccountCmd.accessKey "C">
 <!ENTITY celtxAccountCmd.label "&appName; Account...">
 <!ENTITY celtxError.title       "Drood Error">
-<!ENTITY celtxTagline.label "#1 choice for media pre-production.">
+<!ENTITY celtxTagline.label "#2 choice for media pre-production.">
 <!ENTITY celtxWikiCmd.label "&appName; Wiki">
 <!ENTITY charOutline.desc "An overview of characters and their relations to each other.">
 <!ENTITY charOutline.label "Character Outline">
