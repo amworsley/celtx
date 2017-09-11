@@ -153,12 +153,6 @@
     <menupopup id="script-popup"
                label="&script.label;"
                accesskey="&script.accesskey;">
-      <menuitem label="&importScriptCmd.label;&ellipsis;"
-                accesskey="&importScriptCmd.accesskey;"
-                command="cmd-import-script"/>
-      <menuitem label="&exportScriptCmd.label;&ellipsis;"
-                accesskey="&exportScriptCmd.accesskey;"
-                command="cmd-export-script"/>
       <menu id="popupDuplicateAsMenu"
             label="&adaptTo.label;">
         <menupopup>
