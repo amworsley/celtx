@@ -495,21 +495,18 @@ function showRecent () {
 #else
         <button
 #endif
-                       label="&openFromStudio.label;"
-                       oncommand="template_download()"/>
-#ifdef XP_MACOSX
-        <toolbarbutton class="minibutton"
-#else
-        <button
-#endif
                        label="&browseCmd.label;"
                        oncommand="template_open()"/>
       </hbox>
+      <!--
       <iframe id="powbox"
               src="about:blank"/>
+      -->
     </vbox>
   </hbox>
+  <!--
   <iframe id="notifier"/>
+  -->
   <!--
   <hbox align="center" pack="end">
     <button label="&closeCmd.label;"
