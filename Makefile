@@ -9,7 +9,7 @@ $(BDIR)/mozconfig-nodebug-linux:
 	  $(BDIR)/mozconfig-nodebug-linux.in > $(BDIR)/mozconfig-nodebug-linux
 
 $(BDIR)/.mozconfig:
-	ln -sf $(BDIR)/mozconfig-nodebug-linux $(BDIR)/.mozconfig
+	ln -sf mozconfig-nodebug-linux $(BDIR)/.mozconfig
 
 VER := 0.1.1
 
