@@ -10,3 +10,14 @@ $(BDIR)/mozconfig-nodebug-linux:
 
 $(BDIR)/.mozconfig:
 	ln -sf $(BDIR)/mozconfig-nodebug-linux $(BDIR)/.mozconfig
+
+VER := 0.1.1
+
+PKGNAME := open-celtx
+TFILE := $(PKGNAME)_$(VER).tar
+
+archive: $(TFILE)
+
+$(TFILE):
+	git archive -o $(TFILE) --prefix $(PKGNAME)-$(VER)/ HEAD
+	git tag v$(VER) HEAD
