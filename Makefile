@@ -1,5 +1,6 @@
 BDIR := mozilla
 IDIR := objdir/celtx/installer
+DESTDIR := /usr/local
 all: $(BDIR)/mozconfig-nodebug-linux $(BDIR)/.mozconfig
 	cd $(BDIR); make -f client.mk build
 	cd $(IDIR); make
@@ -21,3 +22,12 @@ archive: $(TFILE)
 $(TFILE):
 	git archive -o $(TFILE) --prefix $(PKGNAME)-$(VER)/ HEAD
 	git tag v$(VER) HEAD
+
+install:
+	install -d $(DESTDIR)/usr/celtx
+	cp -a objdir/dist/celtx/. $(DESTDIR)/usr/celtx
+
+clean:
+	rm -rf objdir core mozilla/config/Expression.pyc mozilla/config/configobj.pyc
+	rm -f $(BDIR)/.mozconfig $(BDIR)/mozconfig-nodebug-linux
+	rm -f $(BDIR)/.mozconfig.mk $(BDIR)/.mozconfig.out

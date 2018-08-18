@@ -1,7 +1,5 @@
 celtx
 
-To be renamed 'drood'
-
 Script Writing and Production Suite
 =====
 

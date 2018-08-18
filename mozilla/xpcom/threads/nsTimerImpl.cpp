@@ -457,7 +457,6 @@ public:
   PRIntervalTime mInitTime;
 #endif
 
-private:
   ~nsTimerEvent() { 
 #ifdef DEBUG
     if (mTimer)
@@ -465,6 +464,7 @@ private:
 #endif
     MOZ_COUNT_DTOR(nsTimerEvent);
   }
+private:
 
   nsTimerImpl *mTimer;
   PRInt32      mGeneration;
@@ -522,7 +522,7 @@ nsresult nsTimerImpl::PostTimerEvent()
     }
   }
 
-  nsresult rv = 0; //mCallingThread->Dispatch(event, NS_DISPATCH_NORMAL);
+  nsresult rv = mCallingThread->Dispatch(event, NS_DISPATCH_NORMAL);
   if (NS_FAILED(rv) && gThread)
     gThread->RemoveTimer(this);
   return rv;
