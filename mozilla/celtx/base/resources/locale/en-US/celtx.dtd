@@ -853,10 +853,10 @@
 <!ENTITY splash.celtxCentralDesc  "Use project central to change your password or update your profile">
 <!ENTITY splash.discussion      "Discussion">
 <!ENTITY splash.downloadProject     "download a project">
-<!ENTITY splash.downloadProjectDesc "Download a project from the drood server">
+<!ENTITY splash.downloadProjectDesc "Download a project from the celtx server">
 <!ENTITY splash.featureTour         "feature tour">
 <!ENTITY splash.forums      "forums">
-<!ENTITY splash.forumsDesc  "Join the discussions on the drood forum">
+<!ENTITY splash.forumsDesc  "Join the discussions on the celtx forum">
 <!ENTITY splash.gettingStarted  "Getting Started">
 <!ENTITY splash.guide               "drood user guide">
 <!ENTITY splash.help            "Help">
