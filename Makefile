@@ -26,3 +26,8 @@ $(TFILE):
 install:
 	install -d $(DESTDIR)/usr/celtx
 	cp -a objdir/dist/celtx/. $(DESTDIR)/usr/celtx
+
+clean:
+	rm -rf objdir core mozilla/config/Expression.pyc mozilla/config/configobj.pyc
+	rm -f $(BDIR)/.mozconfig $(BDIR)/mozconfig-nodebug-linux
+	rm -f $(BDIR)/.mozconfig.mk $(BDIR)/.mozconfig.out
