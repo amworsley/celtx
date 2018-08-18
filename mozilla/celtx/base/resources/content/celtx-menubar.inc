@@ -46,11 +46,6 @@
                   key="key-close-window"
                   label="&closeWindow.label;"/>
         <menuseparator/>
-        <menuitem label="&openFromStudio.label;&ellipsis;"
-                  command="cmd-open-studio"/>
-        <menuitem label="&saveToStudio.label;&ellipsis;"
-                  oncommand="cmdSaveProjectToServer();"/>
-        <menuseparator/>
         <menuitem id="menu-add-item"
                   label="&addItem.label;"
                   disabled="true"

@@ -522,7 +522,7 @@ nsresult nsTimerImpl::PostTimerEvent()
     }
   }
 
-  nsresult rv = mCallingThread->Dispatch(event, NS_DISPATCH_NORMAL);
+  nsresult rv = 0; //mCallingThread->Dispatch(event, NS_DISPATCH_NORMAL);
   if (NS_FAILED(rv) && gThread)
     gThread->RemoveTimer(this);
   return rv;
