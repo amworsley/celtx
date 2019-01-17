@@ -858,11 +858,11 @@
 <!ENTITY splash.forums      "forums">
 <!ENTITY splash.forumsDesc  "Join the discussions on the celtx forum">
 <!ENTITY splash.gettingStarted  "Getting Started">
-<!ENTITY splash.guide               "drood user guide">
+<!ENTITY splash.guide               "open-celtx user guide">
 <!ENTITY splash.help            "Help">
 <!ENTITY splash.helpAccount     "create an account">
 <!ENTITY splash.helpAccountDesc "Creating an account gives you access to the server side features which include collaboration and PDF generation">
-<!ENTITY splash.helpDesc        "The links on the left highlight several drood resources">
+<!ENTITY splash.helpDesc        "The links on the left highlight several open-celtx resources">
 <!ENTITY splash.helpOptions         "help options">
 <!ENTITY splash.inbox           "Inbox">
 <!ENTITY splash.logIn "Sign in">
@@ -874,7 +874,7 @@
 <!ENTITY splash.projectCentral  "Project Central">
 <!ENTITY splash.projects        "projects">
 <!ENTITY splash.recentProjects      "recent projects">
-<!ENTITY splash.sampleDesc      "we've used The Wizard of Oz to illustrate the different features in drood. the various documents are used to flesh out the needs of producing a single scene. included in this sample are a script, character and scene details forms, breakdown information, and some schedule information.">
+<!ENTITY splash.sampleDesc      "we've used The Wizard of Oz to illustrate the different features in open-celtx. the various documents are used to flesh out the needs of producing a single scene. included in this sample are a script, character and scene details forms, breakdown information, and some schedule information.">
 <!ENTITY splash.sampleProject   "sample project">
 <!ENTITY splash.videoWalkthrus      "video walkthrus">
 <!ENTITY splash.videoWalkthrusDesc  "Short video feature tutorials to get you up and running fast">
@@ -883,7 +883,7 @@
 <!ENTITY splash.welcomePrefix     "Welcome to Open-Celtx">
 <!ENTITY splash.welcomePrefixDesc "Media Pre-Production">
 <!ENTITY splash.wiki      "wiki guide">
-<!ENTITY splash.wikiDesc  "The source for getting to know drood">
+<!ENTITY splash.wikiDesc  "The source for getting to know open-celtx">
 <!ENTITY splashScreen.label "Splash Screen">
 <!ENTITY stackTrace.desc        "Below is some information that may be useful to us. Please include it if you decide to report this bug.">
 <!ENTITY stageplay.desc  "Add a stageplay script with international formatting.">
