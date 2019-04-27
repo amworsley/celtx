@@ -10,7 +10,7 @@ apt-get update
 apt-get upgrade
 apt-get install build-essential libasound2-dev libcurl4-openssl-dev libnotify-dev \
 	libxt-dev libiw-dev mesa-common-dev autoconf2.13 yasm libidl-dev \
-	libfreetype6-dev
+	libfreetype6-dev zlib1g-dev
 
 # Not sure if this is necessary
 apt-get build-dep firefox-esr
